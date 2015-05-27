@@ -1,0 +1,46 @@
+{
+  "name": "webpack-unassert-loader",
+  "description": "A webpack loader to remove assertions on production build.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Kenta Mori",
+    "email": "zoncoen@gmail.com",
+    "url": "http://github.com/zoncoen"
+  },
+  "bugs": {
+    "url": "https://github.com/zoncoen/webpack-unassert-loader/issues"
+  },
+  "keywords": [
+    "DbC",
+    "assert",
+    "assertion",
+    "webpack"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zoncoen/webpack-unassert-loader"
+  },
+  "homepage": "https://github.com/zoncoen/webpack-unassert-loader",
+  "scripts": {
+    "fmt": "jsfmt -w ./*.js ./**/*-test.js ./gulpfile.js",
+    "lint": "gulp jshint",
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "escodegen": "^1.6.1",
+    "esprima": "^2.2.0",
+    "unassert": "^1.0.0"
+  },
+  "devDependencies": {
+    "espower-loader": "^0.11.0",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.11.0",
+    "gulp-mocha": "^2.1.0",
+    "intelli-espower-loader": "^0.7.0",
+    "jsfmt": "^0.4.1",
+    "jshint-stylish": "^2.0.0",
+    "power-assert": "^0.11.0"
+  }
+}
