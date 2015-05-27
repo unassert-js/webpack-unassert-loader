@@ -12,8 +12,6 @@ A webpack loader to remove assertions on production build.
 `webpack-unassert-loader` is a webpack loader module to remove assertions on production build.
 `webpack-unassert-loader` applies [unassert](https://github.com/twada/unassert) to target sources through webpack loader chain.
 
-Please note that `webpack-unassert-loader` is a beta version project. Pull-requests, issue reports and patches are always welcomed.
-
 See [unassert](https://github.com/twada/unassert) project for more documentation.
 
 ## Installation
