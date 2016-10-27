@@ -14,8 +14,15 @@ var escodegen = require('escodegen');
 var unassert = require('unassert');
 
 module.exports = function(jsCode) {
-  var ast = esprima.parse(jsCode);
-  var modifiedAst = unassert(ast);
-  this.callback(null, escodegen.generate(modifiedAst), null);
+  var ast = esprima.parse(jsCode,{
+      range: true,
+      tokens: true,
+      comment: true
+  });
+  var attachedAst = escodegen.attachComments(ast, ast.comments, ast.tokens);
+  var modifiedAst = unassert(attachedAst);
+  this.callback(null, escodegen.generate(modifiedAst, {
+      comment: true
+  }), null);
 };
 
