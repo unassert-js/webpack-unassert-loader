@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "escodegen": "^1.6.1",
-    "esprima": "^2.2.0",
+    "esprima": "^3.1.0",
     "unassert": "^1.0.0"
   },
   "devDependencies": {
