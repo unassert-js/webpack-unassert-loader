@@ -18,13 +18,16 @@ describe('webpack-unassert-loader', function() {
   });
 
   it('custom options', function () {
-    var source = 'function add(a, b) {\n    invariant(!isNaN(a));\n    return a + b;\n}';
+    var source = 'var invariant = require("invariant");\n\nfunction add(a, b) {\n    invariant(!isNaN(a));\n    return a + b;\n}';
 
     // set context for webpack loader
     var context = {};
     context.options = {
         assertionPatterns: [
             'invariant(value, [message])'
+        ],
+        requirePatterns: [
+            'invariant = require("invariant")'
         ]
     };
     context.callback = function(err, result, map) {
