@@ -3,7 +3,7 @@
  *
  * https://github.com/unassert-js/webpack-unassert-loader
  *
- * Copyright (c) 2015 Kenta Mori
+ * Copyright (c) 2015- Kenta Mori and Contributors
  * Licensed under the MIT license.
  *   https://github.com/unassert-js/webpack-unassert-loader/blob/master/LICENSE
  */
