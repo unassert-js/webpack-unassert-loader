@@ -1,6 +1,6 @@
 {
   "name": "webpack-unassert-loader",
-  "description": "A webpack loader to remove assertions on production build.",
+  "description": "A webpack loader for unassert: Encourages programming with assertions by providing tools to compile them away",
   "version": "1.1.0",
   "author": {
     "name": "Kenta Mori",

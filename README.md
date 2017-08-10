@@ -5,11 +5,12 @@
 
 # webpack-unassert-loader
 
-A webpack loader to remove assertions on production build.
+A webpack loader for unassert: Encourages programming with assertions by providing tools to compile them away.
+
 
 ## Description
 
-`webpack-unassert-loader` is a webpack loader module to remove assertions on production build.
+`webpack-unassert-loader` is a webpack loader module to remove assertions on build.
 `webpack-unassert-loader` applies [unassert](https://github.com/unassert-js/unassert) to target sources through webpack loader chain.
 
 See [unassert](https://github.com/unassert-js/unassert) project for more documentation.
@@ -30,7 +31,7 @@ Configure `webpack.config.js` to apply `webpack-unassert-loader` through webpack
 {
     module: {
         loaders: [
-            { test: /_test\.js$/, loader: "webpack-unassert-loader" }
+            { test: /\.js$/, loader: "webpack-unassert-loader" }
         ]
     }
 }

@@ -1,5 +1,6 @@
 /**
- * webpack-unassert-loader - A webpack loader to remove assertions on production build.
+ * webpack-unassert-loader - A webpack loader for unassert
+ *   Encourages programming with assertions by providing tools to compile them away
  *
  * https://github.com/unassert-js/webpack-unassert-loader
  *
