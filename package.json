@@ -1,6 +1,6 @@
 {
   "name": "webpack-unassert-loader",
-  "description": "A webpack loader to remove assertions on production build.",
+  "description": "A webpack loader for unassert: Encourages programming with assertions by providing tools to compile them away",
   "version": "1.1.0",
   "author": {
     "name": "Kenta Mori",
@@ -8,7 +8,7 @@
     "url": "http://github.com/zoncoen"
   },
   "bugs": {
-    "url": "https://github.com/zoncoen/webpack-unassert-loader/issues"
+    "url": "https://github.com/unassert-js/webpack-unassert-loader/issues"
   },
   "keywords": [
     "DbC",
@@ -20,9 +20,9 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoncoen/webpack-unassert-loader"
+    "url": "https://github.com/unassert-js/webpack-unassert-loader"
   },
-  "homepage": "https://github.com/zoncoen/webpack-unassert-loader",
+  "homepage": "https://github.com/unassert-js/webpack-unassert-loader",
   "scripts": {
     "fmt": "jsfmt -w ./*.js ./**/*-test.js ./gulpfile.js",
     "lint": "gulp jshint",
@@ -34,13 +34,12 @@
     "unassert": "^1.0.0"
   },
   "devDependencies": {
-    "espower-loader": "^0.11.0",
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.11.0",
     "gulp-mocha": "^2.1.0",
-    "intelli-espower-loader": "^0.7.0",
+    "intelli-espower-loader": "^1.0.0",
     "jsfmt": "^0.4.1",
     "jshint-stylish": "^2.0.0",
-    "power-assert": "^0.11.0"
+    "power-assert": "^1.0.0"
   }
 }

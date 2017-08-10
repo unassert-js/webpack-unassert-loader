@@ -1,11 +1,12 @@
 /**
- * webpack-unassert-loader - A webpack loader to remove assertions on production build.
+ * webpack-unassert-loader - A webpack loader for unassert
+ *   Encourages programming with assertions by providing tools to compile them away
  *
- * https://github.com/zoncoen/webpack-unassert-loader
+ * https://github.com/unassert-js/webpack-unassert-loader
  *
- * Copyright (c) 2015 Kenta Mori
+ * Copyright (c) 2015- Kenta Mori and Contributors
  * Licensed under the MIT license.
- *   https://github.com/zoncoen/webpack-unassert-loader/blob/master/LICENSE
+ *   https://github.com/unassert-js/webpack-unassert-loader/blob/master/LICENSE
  */
 'use strict';
 
