@@ -37,6 +37,41 @@ Configure `webpack.config.js` to apply `webpack-unassert-loader` through webpack
 }
 ```
 
+You can pass unassert options by including to webpack configuration object (e.g. webpack.config.js).
+If not passed, default options (Same as [unassert.defaultOptions()](https://github.com/unassert-js/unassert#var-options--unassertdefaultoptions)) will be used.
+
+```js
+{
+    assertionPatterns: [
+        'assert(value, [message])',
+        'assert.ok(value, [message])',
+        'assert.equal(actual, expected, [message])',
+        'assert.notEqual(actual, expected, [message])',
+        'assert.strictEqual(actual, expected, [message])',
+        'assert.notStrictEqual(actual, expected, [message])',
+        'assert.deepEqual(actual, expected, [message])',
+        'assert.notDeepEqual(actual, expected, [message])',
+        'assert.deepStrictEqual(actual, expected, [message])',
+        'assert.notDeepStrictEqual(actual, expected, [message])',
+        'assert.fail(actual, expected, message, operator)',
+        'assert.throws(block, [error], [message])',
+        'assert.doesNotThrow(block, [message])',
+        'assert.ifError(value)',
+        'console.assert(value, [message])'
+    ],
+    requirePatterns: [
+        'assert = require("assert")',
+        'assert = require("power-assert")'
+    ],
+    importPatterns: [
+        'import assert from "assert"',
+        'import * as assert from "assert"',
+        'import assert from "power-assert"',
+        'import * as assert from "power-assert"'
+    ]
+}
+```
+
 ## Changelog
 
 See [CHANGELOG.md](https://github.com/unassert-js/webpack-unassert-loader/blob/master/CHANGELOG.md).
