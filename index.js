@@ -17,15 +17,15 @@ var unassert = require('unassert');
 
 module.exports = function(jsCode) {
   var options = this.options;
-  var ast = esprima.parse(jsCode,{
-      range: true,
-      tokens: true,
-      comment: true
+  var ast = esprima.parse(jsCode, {
+    range: true,
+    tokens: true,
+    comment: true
   });
   var attachedAst = escodegen.attachComments(ast, ast.comments, ast.tokens);
   var modifiedAst = estraverse.replace(attachedAst, unassert.createVisitor(options));
   this.callback(null, escodegen.generate(modifiedAst, {
-      comment: true
+    comment: true
   }), null);
 };
 
