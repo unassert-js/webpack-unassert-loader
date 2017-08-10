@@ -8,7 +8,7 @@
     "url": "http://github.com/zoncoen"
   },
   "bugs": {
-    "url": "https://github.com/zoncoen/webpack-unassert-loader/issues"
+    "url": "https://github.com/unassert-js/webpack-unassert-loader/issues"
   },
   "keywords": [
     "DbC",
@@ -20,9 +20,9 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zoncoen/webpack-unassert-loader"
+    "url": "https://github.com/unassert-js/webpack-unassert-loader"
   },
-  "homepage": "https://github.com/zoncoen/webpack-unassert-loader",
+  "homepage": "https://github.com/unassert-js/webpack-unassert-loader",
   "scripts": {
     "fmt": "jsfmt -w ./*.js ./**/*-test.js ./gulpfile.js",
     "lint": "gulp jshint",
